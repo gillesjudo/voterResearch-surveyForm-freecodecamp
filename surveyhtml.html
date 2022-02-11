@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="stylesheet" href="surveystyle.css">
+    </head>
+    <body>
+    <h1 id="title">
+        Voter Research Survey 
+    </h1>
+    <p id="description">
+        The purpose of this survey is to get an understanding of what 
+        research voters use to determine the candidate they want. 
+    </p>
+    <form id="survey-form" action="">
+    <!--This is the form where the questions within the survey-->
+        <label for="title">Please fill out your information</label><br>
+        <input type="text" id="name" name="full-name" placeholder="John Doe" required>
+        <label for="name" id="name-label">Full Name</label><br>
+        <input type="email" id="email" name="email" placeholder="youremail@email.com" required>
+        <label for="email" id="email-label">Email Address</label><br>
+        <input type="number" id="number" 
+        name="phone-number" placeholder="8888888888" step="1000000000" min="0" max="10" required>
+        <label for="number" id="number-label">Phone Number</label><br>
+        <label for="Voter?">Did you vote this year?</label><br>
+        <select name="Voter?" id="dropdown">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+        <label for="Candidates">Did you research the candidates when you voted?</label><br>
+        <select name="Candidates">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+        <label for="Research">What did you use to research the candidates?</label><br>
+        <input type="radio" name="research" value="search-engine">
+        <label for="search-engine">Search engine</label><br>
+        <input type="radio" name="research" value="social-media">
+        <label for="social-media">Social media</label><br>
+        <input type="radio" name="research" value="news-outlets">
+        <label for="news-outlets">News outlets</label><br>
+        <label for="knowledge">On scale of 1-10, with 10 being the highest and one being the lowest.<br>
+            How confident where you when you voted?</label><br>
+        <input type="radio" name="confidence" value="10">
+        <label for="10">10</label><br>
+        <input type="radio" name="confidence" value="9">
+        <label for="9">9</label><br>
+        <input type="radio" name="confidence" value="8">
+        <label for="8">8</label><br>
+        <input type="radio" name="confidence" value="7">
+        <label for="7">7</label><br>
+        <input type="radio" name="confidence" value="6">
+        <label for="6">6</label><br>
+        <input type="radio" name="confidence" value="5">
+        <label for="5">5</label><br>
+        <input type="radio" name="confidence" value="4">
+        <label for="4">4</label><br>
+        <input type="radio" name="confidence" value="3">
+        <label for="3">3</label><br>
+        <input type="radio" name="confidence" value="2">
+        <label for="2">2</label><br>
+        <input type="radio" name="confidence" value="1">
+        <label for="1">1</label><br>
+        <!--Put the checkboxes in at this point-->
+        <label for="political-parties">Which political parties have you voted with in the past</label><br>
+        <input type="checkbox" name="democrat" value="Democrat">
+        <label for="democrat">Democrat</label><br>
+        <input type="checkbox" name="republican" value="Republican">
+        <label for="republican">Republican</label><br>
+        <input type="checkbox" name="independent" value="Independent">
+        <label for="independent">Independent</label><br>
+        <input type="checkbox" name="other" value="Other">
+        <label for="other">Other</label><br>
+        <label for="other-sources">Do you have any other sources you would be willing to add?</label><br>
+        <textarea name="other-sources">Write other sources here</textarea><br>
+        <input type="submit" id="submit" value="submit">
+    </form>
+    </body>
+</html>
